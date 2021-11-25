@@ -37,9 +37,15 @@ pFloat.innerHTML = (number * 28) + " % de la population blablabla ";
  */
 
 let pInt = document.getElementById('parse-int');
+let num = parseInt(pInt.innerHTML);
+
+pInt.innerHTML = (num / 28) + " px ";
 
 /*
     Exo 5
  */
 
 let pFixed = document.getElementById('to-fixed');
+let numFixed = parseFloat(pFixed.innerHTML);
+
+pFixed.innerHTML = numFixed.toFixed(2);
