@@ -23,8 +23,6 @@ else {
     pNan.innerHTML = pNan.innerHTML + " ==> " + "est un nombre";
 }
 
-
-
 /*
     Exo 3
  */
@@ -38,5 +36,8 @@ let age = 28;
 
 let pInt = document.getElementById('parse-int');
 
+/*
+    Exo 5
+ */
 
-
+let pFixed = document.getElementById('to-fixed');
