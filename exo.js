@@ -4,10 +4,10 @@
 
 let isInteger = document.getElementById('is-integer');
 if (Number.isInteger(isInteger)) {
-    isInteger.innerHTML = isInteger.innerHTML + " ==> " + "C'est un nombre entier";
+    isInteger.innerHTML = isInteger.innerHTML + " ==> " + " C'est un nombre entier ";
 }
 else {
-    isInteger.innerHTML = isInteger.innerHTML + " ==> " + "Ce n'est pas un nombre entier";
+    isInteger.innerHTML = isInteger.innerHTML + " ==> " + " Ce n'est pas un nombre entier ";
 }
 
 /*
@@ -17,10 +17,10 @@ else {
 let pNan = document.getElementById('is-nan');
 
 if (isNaN(parseInt(pNan.innerHTML))) {
-    pNan.innerHTML = pNan.innerHTML + " ==> " + "est NaN";
+    pNan.innerHTML = pNan.innerHTML + " ==> " + " est NaN ";
 }
 else {
-    pNan.innerHTML = pNan.innerHTML + " ==> " + "est un nombre";
+    pNan.innerHTML = pNan.innerHTML + " ==> " + " est un nombre ";
 }
 
 /*
@@ -28,7 +28,9 @@ else {
  */
 
 let pFloat = document.getElementById('parse-float');
-let age = 28;
+let number = parseFloat(pFloat.innerHTML);
+
+pFloat.innerHTML = (number * 28) + " % de la population blablabla ";
 
 /*
     Exo 4
